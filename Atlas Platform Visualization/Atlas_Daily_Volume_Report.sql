@@ -1,0 +1,1 @@
+select left(a.messagereceivetime,10) as log_day, b.routename,count(a.messageid) from messages as a join routes as b on a.routeid=b.routeid and a.messagereceivetime between '2019-07-31 00:00:00' and '2019-07-31 23:59:59' and b.routename ilike 'NOVA%' group by b.routename,log_day;
