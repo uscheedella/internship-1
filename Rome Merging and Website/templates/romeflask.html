@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<div align="center">
+	<br>
+	<b><font size="12">Rome Reformer </font><br><span><font size="3">for your roman data needs</font></span></b>
+
+</div>
+
+<head>
+	<title>Rome Reformer</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='romeflask.css') }}">
+</head>
+
+<div id="container">
+
+	<html>
+		<body>
+			<form action = "/" method = "POST" 
+     enctype = "multipart/form-data">
+				<input class="choose-file" type = "file" name = "file" id="choose-file" required/>
+				<label for="choose-file" class="upload-file"></label>
+				<input class="submit" type = "submit" name = "file_button" value = "Submit SFile"/>
+				<input class="submit2" type = "submit" name = "file_button" value = "Submit CFile"/>
+			</form>
+
+			<a href="/mergeinflux"><input class="merging" type="button" value="Merge & Graph"></a>
+<!--
+			<a href="/merge/influx"><input class="influx" type="button" value="Import to Influx"></a>
+-->
+			<p class="one"><font size = "2">Choose file above and submit the<br>file with the success rates</font></p>
+			<p class="onetwo"><font size = "2">Choose file above and submit the<br>file with the completion rates</font></p>
+			<p class="two"><font size="2"> Click to merge both files together and plot in Grafana</font></p>
+			<p class="three"><font size="2"> And it's done! Open the downloaded file to view the merged data and visit:<br><br>https://eu1svcs-cnengmetrics001.int.clxnetworks.net:8443/d/000000028/dwh-rome-sdr?tab=queries&orgId=1&var-site=US1P&var-site=US2C&var-site=US3C&var-site=US4P&from=1562773819151&to=1564501819151<br><br>to see the pretty points!</font></p>
+                  
+                  	<p class="csv"><font size = "2">MUST BE .CSV FILE</font></p>
+
+<!--
+			<p class="three"><font size="2"> And it's done! Open the downloaded file to view the merged data and go to<br>https://eu1svcs-cnengmetrics001.int.clxnetworks.net:8443/d/000000028/dwh-rome-sdr?tab=queries&orgId=1&var-site=US1P&var-site=US2C&var-site=US3C&var-site=US4P&from=1562773819151&to=1564501819151<br>to see the pretty points</font></p>
+-->
+		</body>
+</div>
+	</html>
