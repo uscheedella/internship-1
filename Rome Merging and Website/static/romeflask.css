@@ -174,33 +174,6 @@ label.upload-file::before {
 	text-decoration-color: #E5246E;
 }
 
-/*.influx {
-	display: block;
-	max-width: 300px;
-	margin: 90px;
-	text-decoration: underline;
-	text-decoration-color: #1c529e;
-	border: 2px solid #D9EDFF;
-	color: #fff;
-	font-size: 13px;
-	text-align: center;
-	line-height: 50px;
-	border-radius: 100px;
-	padding: 0 22px;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	background: #1c529e;
-	width: 200px;
-	margin-right: 40px;
-	box-shadow: 0 2px 4px rgba(83, 100, 255, 0.32);
-}
-
-.influx:hover {
-	background-color: #E5246E;
-	color: #fff;
-	box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
-	text-decoration-color: #E5246E;
-} */
 @keyframes textani {
 	0%   {color:blue}
 	25%  {color:#b5b5b5}
